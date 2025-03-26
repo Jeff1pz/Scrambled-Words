@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scramble Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-puzzle-piece"></i>
+                Word Scramble
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="game.html">Play Game</a>
+                <a href="leaderboard.html">Leaderboard</a>
+                <a href="abt.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+                <button id="themeToggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Get in Touch</h1>
+            <p>Share your thoughts about the game or connect with other players through comments. We'd love to hear from you!</p>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h3>Have suggestions or found a bug?</h3>
+            <p>Email us at: <a href="mailto:wordscramble.support@gmail.com">wordscramble.support@gmail.com</a></p>
+        </div>
+    </div>
+
+    <section class="comment-section">
+        <h2>Share Your Thoughts</h2>
+        <div class="comment-form-container">
+            <form class="comment-form">
+                <div class="form-group">
+                    <input type="text" class="comment-input" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="comment-input" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="comment-input" placeholder="Write your comment here..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Post Comment
+                </button>
+            </form>
+        </div>
+        <div class="comments-container">
+            <!-- Comments will be dynamically added here -->
+        </div>
+    </section>
+
+    <script src="theme.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
